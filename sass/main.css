@@ -348,28 +348,43 @@ template {
 
 a {
   text-decoration: none;
+  font-weight: 500;
   color: #937b92;
 }
 
 body {
-  min-height: 100vh;
   font-family: "Spartan", sans-serif;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 1.5rem;
   color: #937b92;
-  line-height: 1.5rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: #502050;
-  line-height: 3rem;
+  line-height: 4.7rem;
 }
 
-main,
-.attribution {
+p {
+  line-height: 1.7rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
   margin: 0 auto;
-  max-width: 85%;
-  padding-top: 4rem;
+  max-width: 80rem;
 }
 /*# sourceMappingURL=main.css.map */

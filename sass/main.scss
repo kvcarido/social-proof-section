@@ -11,4 +11,11 @@
 @import '2-basics/typography';
 
 // 3 - LAYOUT
-@import '3-layout/layout';
+@import '3-layout/base';
+@import '3-layout/container';
+
+// 4 - COMPONENTS
+@import '4-components/attribution';
+@import '4-components/hero';
+@import '4-components/ratings';
+@import '4-components/testimonials';
