@@ -63,13 +63,10 @@ html {
 
 body {
     font-size: 1.5rem;
-    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
     background-position: top left, bottom right;
     background-repeat: no-repeat;
-    min-height: 100vh;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .panel {
@@ -154,4 +151,103 @@ body {
 
 span.verified {
     color: var(--softPink);
+}
+
+.attribution {
+    font-size: 1rem;
+    color: var(--darkGreyMagenta);
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--darkMagenta);
+    border-bottom: 0.1rem solid var(--darkMagenta);
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1.5rem;
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        background-position: top left, bottom right;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2rem;
+    }
+
+    .panel {
+        display: flex;
+        margin: auto 0;
+        max-width: 80%;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .title {
+        text-align: left;
+        padding-right: 7rem;
+    }
+
+    .headline {
+        font-size: 5rem;
+        line-height: 5.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .ratings {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rating {
+        padding: 2rem;
+        text-align: left;
+    }
+    
+    .rating:nth-child(1) {
+        align-self: flex-start;
+    }
+
+    .rating:nth-child(2) {
+        align-self: center;
+    }
+
+    .rating:nth-child(3) {
+        align-self: flex-end;
+    }
+    
+    .stars {
+        display: inline;
+        margin-right: 2rem;
+    }
+
+    .testimonials {
+        display: flex;
+    }
+
+    .testimonial {
+        height: 90%;
+        margin: 1.5rem;
+    }
+
+    .testimonial:nth-child(1) {
+        align-self: flex-start;
+    }
+
+    .testimonial:nth-child(2) {
+        align-self: center;
+    }
+
+    .testimonial:nth-child(3) {
+        align-self: flex-end;
+    }
 }
